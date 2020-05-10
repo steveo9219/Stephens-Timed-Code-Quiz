@@ -14,28 +14,36 @@
     <link rel="stylesheet" href="./Assets/style.css" />
   </head>
   <body>
+    <h2 id="highScores">View Highscores</h2>
+    <h2 id="timer">timer</h2>
+    <h1 id="landingPage">Coding Quiz Timed Challenge</h1>
+    
+    
     <main class="container">
-      <h1>Password Generator</h1>
+      
+      
       <section class="jumbotron">
-        <p class="lead">
-          Generate a Password
+        <p id="display">
+          Try to answer the following code-related questions within the time limit. Keep in mind
+          that incorrect answers will penalize your score/time by ten seconds!
         </p>
-        <hr class="my-4" />
-        <article class="content">
-          <input
-            type="text"
-            id="display"
-            placeholder="Your secure password will appear here when ready! Press Generate Password"
-          />
-        </article>
-        <hr class="my-4" />
+        <ol>
+          <li id="firstAnswer" onclick="increaseQuestionIndex()" value="0" class="btn btn-primary "></li>
+          <li id="secondAnswer" onclick="increaseQuestionIndex()" value="1" class="btn btn-secondary"></li>
+          <li id="thirdAnswer" onclick="increaseQuestionIndex()" value="2" class="btn btn-success"></li>
+        </ol>
+        
+        
+        
+        
         <article class="row-lg-12">
-          <button id="generate" class="btn btn-danger">
-            Generate Password
-          </button>
-        </article>
-      </section>
-      <script src="./Assets/script.js"></script>
-    </main>
+
+        
+    <button id="startButton" class="btn btn-danger">
+      Start Quiz
+    </button>
+    
+      
+    <script src="./Assets/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,31 @@
+/* Centered the "Coding Quiz Timed Challenge */
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Timer set in top right */
+#highScores {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#timer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+}
