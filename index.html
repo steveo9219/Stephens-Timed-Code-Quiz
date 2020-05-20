@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="./Assets/style.css" />
   </head>
   <body>
-    <h2 id="highScores">View Highscores</h2>
-    <h2 id="timer">timer</h2>
+    <h1>Points</h1>
+    <h1 id="highScores"></h1>
+    <h1 id="timer">timer</h1>
     <h1 id="landingPage">Coding Quiz Timed Challenge</h1>
     
     
@@ -28,9 +29,9 @@
           that incorrect answers will penalize your score/time by ten seconds!
         </p>
         <ol>
-          <li id="firstAnswer" onclick="increaseQuestionIndex()" value="0" class="btn btn-primary "></li>
-          <li id="secondAnswer" onclick="increaseQuestionIndex()" value="1" class="btn btn-secondary"></li>
-          <li id="thirdAnswer" onclick="increaseQuestionIndex()" value="2" class="btn btn-success"></li>
+          <li data-value = "a" id="firstAnswer" class="btn btn-primary"></li>
+          <li data-value = "b" id="secondAnswer" class="btn btn-secondary"></li>
+          <li data-value = "c" id="thirdAnswer" class="btn btn-success"></li>
         </ol>
         
         
@@ -39,7 +40,7 @@
         <article class="row-lg-12">
 
         
-    <button id="startButton" class="btn btn-danger">
+    <button id="startButton" onclick="setInterval(myTimer, 7500)" class="btn btn-danger">
       Start Quiz
     </button>
     

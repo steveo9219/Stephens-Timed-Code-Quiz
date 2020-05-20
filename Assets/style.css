@@ -7,7 +7,7 @@ h1 {
 /* Timer set in top right */
 #highScores {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center
 }
 
 #timer {
@@ -29,3 +29,7 @@ ol {
   display: flex;
   flex-direction: column;
 }
+
+
+after the user clicks on an answer it needs to increment/decrement the players score if they got it right
+wrong. 
